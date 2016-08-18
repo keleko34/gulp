@@ -43,7 +43,7 @@ var toRun = tasks.length ? tasks : ['default'];
 // This is a hold-over until we have a better logging system
 // with log levels
 var simpleTasksFlag = argv['tasks-simple'];
-var shouldLog = !argv.silent && !simpleTasksFlag;
+var shouldLog = false;//!argv.silent && !simpleTasksFlag;
 
 if (!shouldLog) {
   gutil.log = function() {};
