@@ -78,7 +78,7 @@ function handleArguments(env) {
     if (env.modulePackage && typeof env.modulePackage.version !== 'undefined') {
       gutil.log('Local version', env.modulePackage.version);
     }
-    process.exit(0);
+    //process.exit(0);
   }
 
   if (!env.modulePath) {
